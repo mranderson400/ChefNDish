@@ -1,0 +1,18 @@
+@model List<Chef> 
+
+
+@foreach (Chef chef in ViewBag.AllChefs)
+{
+<div class="container w-75 mx-auto">
+<p> 
+
+<h1>@chef.FirstName</h1>
+<h1>@chef.LastName</h1>
+<h1>@chef.Birth.ToString("MM/dd/yyyy")</h1>
+<p>@chef.AllDishesMade.Count</p>
+<br>
+
+</p>
+</div>
+}
+

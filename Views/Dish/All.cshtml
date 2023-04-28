@@ -1,0 +1,13 @@
+@model List<Dish> 
+
+@foreach (Dish dish in Model)
+{
+<div class="container w-75 mx-auto">
+<p> 
+
+<h1>@dish.DishName @dish.Creator.FirstName @dish.Creator.LastName</h1>
+
+</p>
+</div>
+}
+
